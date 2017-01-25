@@ -44,7 +44,47 @@ figure figcaption{
 	background-color:#dddddd;
 	height:20%;
 }
+/*********** Menu DropDown ***************/
 
+nav{
+	background-color:white;
+}
+nav ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+nav ul li{
+	display:table-cell;
+	width:150px;
+	position:relative;
+}
+nav ul li a{
+	display:block;
+	color:black;
+	background-color:white;
+	line-height:50px;
+	text-decoration:none;
+}
+nav ul li a:hover{
+	color:white;
+	background-color:black;
+	font-weight:bold;
+}
+nav ul li ul{
+	position:absolute;
+	overflow:hidden;
+	max-height:0px;
+	background-color:red;
+	transition:max-height 1s;
+}
+nav ul li:hover ul{
+	max-height:300px;
+}
+nav ul li ul li{
+	display:block;
+}
 
 
 
