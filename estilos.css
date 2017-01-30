@@ -1,9 +1,12 @@
+body{
+	font-family:sans;
+}
 ul#menu, aside, main, figure, figcaption{box-sizing:border-box}
 ul#menu, aside, main{
 	vertical-align:text-top;padding:15px 5px 5px 5px}
 h1, h2, ul, li, p{margin:0px;}
 ul#menu{
-	background-color:#ffaaaa;
+	background-color:#eeeeee;
 	width:20%;
 	display:inline-block;
 }
@@ -11,18 +14,25 @@ ul#menu li {list-style-type:none}
 ul#menu li a{text-decoration:none;color:darkblue}
 nav{text-align:center;padding:10px}
 aside{
-	background-color:#aaffaa;
+	background-color:#eeeeee;
 	width:20%;
 	display:inline-block;
 }
 main{
-	background-color:#aaaaff;
+	background-color:#cccccc;
 	width:60%;
 	display:inline-block;
 }
+main h2{
+	padding:15px 0px;
+}
 footer, header{
-	background-color:#ffffaa;
+	/*background-color:#ffffaa;*/
 	text-align:center;
+}
+header h1{
+	padding:15px 0;
+	border-bottom:8px solid #ffffaa;
 }
 figure{
 	width:200px;
@@ -50,7 +60,7 @@ nav{
 	background-color:white;
 	padding:0;
 }
-nav  ul{
+nav ul{
 	margin:0;
 	padding:0;
 	list-style-type:none;
@@ -74,14 +84,14 @@ nav ul li a{
 }
 nav ul li a:hover{
 	color:white;
-	background-color:black;
+	background-color:#fcaf3e;
 	font-weight:bold;
 }
 nav ul li ul{
 	position:absolute;
 	overflow:hidden;
 	max-height:0px;
-	background-color:red;
+	box-shadow: 10px 10px 15px #888888;
 	transition:max-height 1s;
 }
 nav ul li ul li a{
